@@ -15,6 +15,9 @@
 		127AB014287EBA24001C7880 /* GreenReminder.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 127AB012287EBA24001C7880 /* GreenReminder.xcdatamodeld */; };
 		127AB01F287EBA25001C7880 /* GreenReminderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127AB01E287EBA25001C7880 /* GreenReminderTests.swift */; };
 		127AB02A287EBA25001C7880 /* GreenReminderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127AB029287EBA25001C7880 /* GreenReminderUITests.swift */; };
+		127AB03C287EF5FC001C7880 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127AB03B287EF5FC001C7880 /* ListView.swift */; };
+		127AB03D287EF5FC001C7880 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127AB03B287EF5FC001C7880 /* ListView.swift */; };
+		127AB03E287EF5FC001C7880 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127AB03B287EF5FC001C7880 /* ListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,7 @@
 		127AB025287EBA25001C7880 /* GreenReminderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GreenReminderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		127AB029287EBA25001C7880 /* GreenReminderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreenReminderUITests.swift; sourceTree = "<group>"; };
 		127AB02B287EBA25001C7880 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		127AB03B287EF5FC001C7880 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,9 +104,10 @@
 			isa = PBXGroup;
 			children = (
 				127AB007287EBA1C001C7880 /* GreenReminderApp.swift */,
-				127AB009287EBA1C001C7880 /* ContentView.swift */,
+				127AB039287EBA73001C7880 /* ViewModel */,
+				127AB038287EBA63001C7880 /* View */,
+				127AB037287EBA58001C7880 /* Model */,
 				127AB00B287EBA24001C7880 /* Assets.xcassets */,
-				127AB010287EBA24001C7880 /* Persistence.swift */,
 				127AB015287EBA24001C7880 /* Info.plist */,
 				127AB012287EBA24001C7880 /* GreenReminder.xcdatamodeld */,
 				127AB00D287EBA24001C7880 /* Preview Content */,
@@ -134,6 +139,30 @@
 				127AB02B287EBA25001C7880 /* Info.plist */,
 			);
 			path = GreenReminderUITests;
+			sourceTree = "<group>";
+		};
+		127AB037287EBA58001C7880 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				127AB010287EBA24001C7880 /* Persistence.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		127AB038287EBA63001C7880 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				127AB009287EBA1C001C7880 /* ContentView.swift */,
+				127AB03B287EF5FC001C7880 /* ListView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		127AB039287EBA73001C7880 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -267,6 +296,7 @@
 			files = (
 				127AB011287EBA24001C7880 /* Persistence.swift in Sources */,
 				127AB014287EBA24001C7880 /* GreenReminder.xcdatamodeld in Sources */,
+				127AB03C287EF5FC001C7880 /* ListView.swift in Sources */,
 				127AB00A287EBA1C001C7880 /* ContentView.swift in Sources */,
 				127AB008287EBA1C001C7880 /* GreenReminderApp.swift in Sources */,
 			);
@@ -276,6 +306,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				127AB03D287EF5FC001C7880 /* ListView.swift in Sources */,
 				127AB01F287EBA25001C7880 /* GreenReminderTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -284,6 +315,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				127AB03E287EF5FC001C7880 /* ListView.swift in Sources */,
 				127AB02A287EBA25001C7880 /* GreenReminderUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -427,7 +459,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"GreenReminder/Preview Content\"";
-				DEVELOPMENT_TEAM = GH4AFPGYVV;
+				DEVELOPMENT_TEAM = F8AP54Z6AD;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = GreenReminder/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -449,7 +481,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"GreenReminder/Preview Content\"";
-				DEVELOPMENT_TEAM = GH4AFPGYVV;
+				DEVELOPMENT_TEAM = F8AP54Z6AD;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = GreenReminder/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
