@@ -9,63 +9,82 @@ import SwiftUI
 
 struct ListView: View {
     
-    @State private var isPresent = true
-    
     var body: some View {
         VStack {
-            HStack {
-                Rectangle().size(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height / 15).foregroundColor(.green)
-                
+            //MARK: Header
+            ZStack(alignment: .trailing) {
+                Rectangle()
+                    .foregroundColor(.green)
+
                 Button(action: {
-                    Alert(title: Text("WOW"), message: Text("Add button pressed"))
+                      print("Add Button has been pressed")
                 }, label: {
-                    Text("+")
+                    Image(systemName: "plus.circle.fill")
+                        .foregroundColor(.white)
+                        .font(.title)
                 })
+                .padding()
             }
-            
+            .aspectRatio(12, contentMode: .fit)
+
+            //MARK: ListView
+            List {
+                ListItem()
+                ListItem()
+                ListItem()
+                ListItem()
+                ListItem()
+                ListItem()
+            }
+
         }
     }
 }
 
 struct ListItem: View {
     
-    private let width = UIScreen.main.bounds.width
-    private let height = UIScreen.main.bounds.height
-    private let unitSize = UIScreen.main.bounds.width
-    
     var body: some View {
+        //MARK: List Item Header
         VStack {
-            Text("Plant name")
-                .frame(width: unitSize, height: unitSize/10, alignment: .center)
-                .foregroundColor(.white)
-                .background(Color(.green))
-                
+            ZStack(alignment: .center) {
+                Rectangle()
+                    .foregroundColor(.green)
+                Text("Plant name")
+            }
+            .aspectRatio(10, contentMode: .fit)
+            
+            //MARK: List Item Content
             HStack {
                 Image("sampleImage")
                     .resizable()
                     .aspectRatio(1, contentMode: .fit)
-                    .frame(width: unitSize/5, height: unitSize/5, alignment: .center)
+                
                 VStack {
                     Image(systemName: "drop.fill")
+                        .resizable()
+                        .scaledToFit()
                         .aspectRatio(1, contentMode: .fit)
                     Text("100 mL")
                 }
-                .frame(width: unitSize/5, height: unitSize/5, alignment: .center)
+                
                 LazyVGrid(columns: [GridItem(), GridItem()], content: {
                     Image(systemName: "bonjour")
+                        .resizable()
                     Image(systemName: "sun.max.fill")
+                        .resizable()
                     Image(systemName: "face.dashed")
+                        .resizable()
                 })
                 .aspectRatio(1, contentMode: .fit)
-                .frame(width: unitSize/5, height: unitSize/5, alignment: .center)
+                
                 Spacer()
+                
                 VStack {
                     Text("In 3")
                     Text("Days")
                 }
-                .frame(width: unitSize/5, height: unitSize/5, alignment: .center)
+                .padding()
             }
-            .frame(width: unitSize, height: unitSize / 2, alignment: .center)
         }
     }
 }
@@ -74,8 +93,14 @@ struct ListItem: View {
 struct ListView_Previews: PreviewProvider {
     static var previews: some View {
         ListView()
+        ListView()
+            .previewDevice("iPhone 12 mini")
+        ListView()
+            .previewDevice("iPad Air (4th generation)")
         ListItem()
             .previewLayout(.sizeThatFits)
-        
+        ListItem()
+            .previewLayout(.sizeThatFits)
+            .preferredColorScheme(.dark)
     }
 }

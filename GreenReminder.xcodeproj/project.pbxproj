@@ -18,6 +18,9 @@
 		127AB03C287EF5FC001C7880 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127AB03B287EF5FC001C7880 /* ListView.swift */; };
 		127AB03D287EF5FC001C7880 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127AB03B287EF5FC001C7880 /* ListView.swift */; };
 		127AB03E287EF5FC001C7880 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127AB03B287EF5FC001C7880 /* ListView.swift */; };
+		127AB04028846E75001C7880 /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127AB03F28846E74001C7880 /* AppModel.swift */; };
+		127AB04128846E75001C7880 /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127AB03F28846E74001C7880 /* AppModel.swift */; };
+		127AB04228846E75001C7880 /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127AB03F28846E74001C7880 /* AppModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +56,7 @@
 		127AB029287EBA25001C7880 /* GreenReminderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreenReminderUITests.swift; sourceTree = "<group>"; };
 		127AB02B287EBA25001C7880 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		127AB03B287EF5FC001C7880 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		127AB03F28846E74001C7880 /* AppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +149,7 @@
 			isa = PBXGroup;
 			children = (
 				127AB010287EBA24001C7880 /* Persistence.swift */,
+				127AB03F28846E74001C7880 /* AppModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -295,6 +300,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				127AB011287EBA24001C7880 /* Persistence.swift in Sources */,
+				127AB04028846E75001C7880 /* AppModel.swift in Sources */,
 				127AB014287EBA24001C7880 /* GreenReminder.xcdatamodeld in Sources */,
 				127AB03C287EF5FC001C7880 /* ListView.swift in Sources */,
 				127AB00A287EBA1C001C7880 /* ContentView.swift in Sources */,
@@ -307,6 +313,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				127AB03D287EF5FC001C7880 /* ListView.swift in Sources */,
+				127AB04128846E75001C7880 /* AppModel.swift in Sources */,
 				127AB01F287EBA25001C7880 /* GreenReminderTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -316,6 +323,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				127AB03E287EF5FC001C7880 /* ListView.swift in Sources */,
+				127AB04228846E75001C7880 /* AppModel.swift in Sources */,
 				127AB02A287EBA25001C7880 /* GreenReminderUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
