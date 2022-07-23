@@ -21,6 +21,9 @@
 		127AB04028846E75001C7880 /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127AB03F28846E74001C7880 /* AppModel.swift */; };
 		127AB04128846E75001C7880 /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127AB03F28846E74001C7880 /* AppModel.swift */; };
 		127AB04228846E75001C7880 /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127AB03F28846E74001C7880 /* AppModel.swift */; };
+		127AB04428857F78001C7880 /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127AB04328857F77001C7880 /* ListViewModel.swift */; };
+		127AB04528857F78001C7880 /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127AB04328857F77001C7880 /* ListViewModel.swift */; };
+		127AB04628857F78001C7880 /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127AB04328857F77001C7880 /* ListViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +60,7 @@
 		127AB02B287EBA25001C7880 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		127AB03B287EF5FC001C7880 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
 		127AB03F28846E74001C7880 /* AppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
+		127AB04328857F77001C7880 /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,6 +170,7 @@
 		127AB039287EBA73001C7880 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				127AB04328857F77001C7880 /* ListViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -301,6 +306,7 @@
 			files = (
 				127AB011287EBA24001C7880 /* Persistence.swift in Sources */,
 				127AB04028846E75001C7880 /* AppModel.swift in Sources */,
+				127AB04428857F78001C7880 /* ListViewModel.swift in Sources */,
 				127AB014287EBA24001C7880 /* GreenReminder.xcdatamodeld in Sources */,
 				127AB03C287EF5FC001C7880 /* ListView.swift in Sources */,
 				127AB00A287EBA1C001C7880 /* ContentView.swift in Sources */,
@@ -314,6 +320,7 @@
 			files = (
 				127AB03D287EF5FC001C7880 /* ListView.swift in Sources */,
 				127AB04128846E75001C7880 /* AppModel.swift in Sources */,
+				127AB04528857F78001C7880 /* ListViewModel.swift in Sources */,
 				127AB01F287EBA25001C7880 /* GreenReminderTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -324,6 +331,7 @@
 			files = (
 				127AB03E287EF5FC001C7880 /* ListView.swift in Sources */,
 				127AB04228846E75001C7880 /* AppModel.swift in Sources */,
+				127AB04628857F78001C7880 /* ListViewModel.swift in Sources */,
 				127AB02A287EBA25001C7880 /* GreenReminderUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

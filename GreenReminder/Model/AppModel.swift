@@ -9,9 +9,7 @@ import SwiftUI
 
 class AppModel {
     
-    
-    
-    
+    var listItems: [ListItem]
     
     private let iconArray = [Image(systemName: "hand.thumbdown"),
                              Image(systemName: "hand.point.up"),
@@ -23,6 +21,12 @@ class AppModel {
                              Image(systemName: "hand.point.down")
     ]
     
+    init(listItems: [ListItem]) {
+        self.listItems = listItems
+    }
     
+    func addItem(item: ListItem) {
+        listItems.append(item)
+    }
     
 }
