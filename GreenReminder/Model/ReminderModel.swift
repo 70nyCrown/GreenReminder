@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-class AppModel {
+class ReminderModel {
     
     var listItems: [ListItem]
     

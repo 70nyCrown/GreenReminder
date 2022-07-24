@@ -7,9 +7,9 @@
 
 import SwiftUI
 
-struct ListViewModel {
+struct ReminderVM {
     
-    var model: AppModel
+    var model: ReminderModel
     
     func addItem(item: ListItem) {
         model.addItem(item: item)
