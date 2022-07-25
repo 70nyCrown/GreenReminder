@@ -7,14 +7,14 @@
 
 import SwiftUI
 
-struct ReminderVM {
-    
-    var model: ReminderModel
+class ReminderVM: ObservableObject {
+    @Published private var model = ReminderModel.init(listItems: [ListItem(), ListItem()])
+     
+    var items: [ListItem] {
+        model.listOfItems
+    }
     
     func addItem(item: ListItem) {
         model.addItem(item: item)
     }
-    
-    
-    
 }
